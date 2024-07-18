@@ -1,13 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
 body {
     margin: 0; /*чтобы не было белых полос по краям*/
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-
-.container {
-    margin: 0 265px;/*отступ сверху и по бокам*/
 }
 
 .header {
@@ -37,9 +44,10 @@ body {
 
 .menu-text-item {
     text-decoration-line: none; /*убирает подчеркивание текста*/
-    font-size: 20px; /*размер текста*/
+    font-size: 18px; /*размер текста*/
     font-weight: 400; /*вес текста*/
     margin-right: 77px; /*отступы справа*/
+    color: black;
 
     transition: color 0.3s linear; /*делает окрашивание кнопки более плавным*/
 }
@@ -49,40 +57,40 @@ body {
 }
 
 .header-logo img{
-    height: 60px;
+    height: 55px;
 }
 
 .header-title {
     color: #FF9C01;
-    font-size: 35px;
+    font-size: 31px;
     font-weight: bold;
     text-align: center;
-    margin-top: 240px;
+    margin-top: 200px;
 }
 
-.header-title:after {
+/*.header-title:after {
     position: absolute;
     content: ' ';
-    height: 4px;
+    height: 3px;
     width: 300px;
     background-color: #FF9C01;
-    top: 340px;
-    left: 375px;
+    top: 310px;
+    left: 335px;
 }
 
 .header-title:before {
     position: absolute;
     content: ' ';
-    height: 4px;
-    width: 300px;
+    height: 3px;
+    width: 290px;
     background-color: #FF9C01;
-    top: 340px;
-    right: 375px;
-}
+    top: 310px;
+    right: 335px;
+}*/
 
 .header-subtitle {
     color: #FFFF;
-    font-size: 45px;
+    font-size: 40px;
     padding-top: 35px;
 }
 
@@ -90,7 +98,7 @@ body {
     color: black;
     padding: 19px 30px;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 17px;
     text-align: center;
     text-decoration: none;
 
