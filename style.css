@@ -17,12 +17,17 @@ body {
     font-style: normal;
 }
 
-.header {
+.main {
     background-image: url("images/bg.png");
     height:100vh; /*растягивает карртинку на всю возможную высоту экрана*/
     background-size: cover; /*картинка растягивается на весь монитор равномерно*/
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.header {
+
+
 
 }
 
