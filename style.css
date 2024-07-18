@@ -18,6 +18,7 @@ body {
 }
 
 .main {
+    overflow: hidden;
     background-image: url("images/bg.png");
     height:100vh; /*растягивает карртинку на всю возможную высоту экрана*/
     background-size: cover; /*картинка растягивается на весь монитор равномерно*/
@@ -26,9 +27,12 @@ body {
 }
 
 .header {
+    padding: 50px 0;
+}
 
-
-
+.header .container {
+    display: flex;
+    align-items: center;
 }
 
 .header-line {
@@ -63,6 +67,15 @@ body {
 
 .header-logo img{
     height: 55px;
+}
+
+.main-content {
+    padding-top: 103px;
+    padding-bottom: 199px;
+}
+
+.main-content .container {
+    position: relative;
 }
 
 .header-title {
