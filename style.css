@@ -1,0 +1,108 @@
+body {
+    margin: 0; /*чтобы не было белых полос по краям*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.container {
+    margin: 0 265px;/*отступ сверху и по бокам*/
+}
+
+.header {
+    background-image: url("images/bg.png");
+    height:100vh; /*растягивает карртинку на всю возможную высоту экрана*/
+    background-size: cover; /*картинка растягивается на весь монитор равномерно*/
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.header-line {
+    padding-top: 17px; /*отступ сверху*/
+    display: flex; /*располагает элементы в одну линию друг за другом*/
+    align-items: center; /*выравнивает все элементы по центру строки*/
+    justify-content: space-around; /* определяет, как браузер
+    распределяет пространство между и вокруг элементов контента вдоль главной оси flex контейнера,
+    или вдоль строчной оси grid контейнера*/
+}
+
+.menu-list {
+    display: flex;
+    margin-left: 140px;
+    list-style: none; /*убирает стиль у списка (точки)*/
+
+}
+
+.menu-text-item {
+    text-decoration-line: none; /*убирает подчеркивание текста*/
+    font-size: 20px; /*размер текста*/
+    font-weight: 400; /*вес текста*/
+    margin-right: 77px; /*отступы справа*/
+
+    transition: color 0.3s linear; /*делает окрашивание кнопки более плавным*/
+}
+
+.menu-text-item:hover {
+    color: #FF9707; /*окрашивает кнопку при наведении в другой цвет*/
+}
+
+.header-logo img{
+    height: 60px;
+}
+
+.header-title {
+    color: #FF9C01;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 240px;
+}
+
+.header-title:after {
+    position: absolute;
+    content: ' ';
+    height: 4px;
+    width: 300px;
+    background-color: #FF9C01;
+    top: 340px;
+    left: 375px;
+}
+
+.header-title:before {
+    position: absolute;
+    content: ' ';
+    height: 4px;
+    width: 300px;
+    background-color: #FF9C01;
+    top: 340px;
+    right: 375px;
+}
+
+.header-subtitle {
+    color: #FFFF;
+    font-size: 45px;
+    padding-top: 35px;
+}
+
+.header-btn {
+    color: black;
+    padding: 19px 30px;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, #ff9707 0%, #ffb603 17.6%, #ff9707 100%)
+}
+
+.header-button {
+    margin-top: 45px;
+}
+
+.header-btn:hover {
+    background: linear-gradient(180deg, #c77606 0%, #d39603 17.6%, #c77606 100%);
+}
